@@ -64,6 +64,9 @@ function ajouter(d) {
 			r = r + d;
 			break;
 	}
+	if(r == ""){
+		r = "0";
+	}
 	if(typeof r != "number"){
 		r = r.replaceAll("*","x");
 	}
