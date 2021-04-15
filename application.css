@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'The Display St';
+    font-style: normal;
+    font-weight: normal;
+    src: local('The Display St'), url('The Display St.woff') format('woff');
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding:0;
+	background-color: #454755;
+	color: white;
+}
+#calculette {
+	position: relative;
+	display: block;
+	width: 29vw;
+	margin: 2.5vw auto;
+	background-color: #9395a2;
+	height: 38vw;
+	border-radius: 3vw;
+	box-shadow: 8px 8px #00000080;
+	padding: 3vw;
+}
+#ecran {
+	position: relative;
+	display: block;
+	margin: 1vw auto;
+	width: 87%;
+	background-color: white;
+	height: 12%;
+	border-radius: 0.4vw;
+	margin-bottom: 3vw;
+	color: #000000ad;
+	user-select: none;
+	font-size: 3.5vw;
+	text-align: right;
+	padding: 0vw 1vw;
+	font-family: "The Display St",sans-serif;
+	padding-bottom: 1vw;
+	text-overflow: clip;
+	overflow-x: scroll;
+	scroll-behavior: smooth;
+	overflow-y: hidden;
+	scrollbar-width: thin;
+}
+.ligne {
+	display: flex;
+	margin: 1vw auto;
+	justify-content: space-between;
+	padding: 0px 1vw;
+}
+.touche {
+	width: 3vw;
+	height: 3vw;
+	border-radius: 50%;
+	background-color: #f2b25f;
+	box-shadow: 3px 3px #996a2d;
+	font-size: 2.5vw;
+	text-align: center;
+	padding: 1vw;
+	cursor: pointer;
+	position: relative;
+	display: block;
+	user-select: none;
+}
+.touche:hover {
+	background-color: #e3c297;
+	transform: translate(-2px,-2px);
+	box-shadow: 5px 5px #b38d5b;
+}
+.touche:active {
+	transform: translate(-2px,-2px);
+	box-shadow: 5px 5px #b35b5b;
+	background-color: #f48282;
+}
+
+/* Paramètre Ordinateur */
+@media screen and (min-device-width: 960px)
+    {
+        /* Liste de vos règles */
+    }
+
+
+/* Paramètrage Smartphone */
+@media screen and (max-device-width: 481px)
+    {
+        /* Liste de vos règles */
+    }
+
+
+/* Paramètrage Tablettes */
+@media screen and (min-device-width: 480px) and (max-device-width: 961px)
+    {
+        /* Liste de vos règles */
+    }
