@@ -57,6 +57,9 @@ function ajouter(d) {
 				r = r.substring(2,r.length - 1);
 			}
 			else {
+				if(r == ""){
+					r = "0";
+				}
 				r = "-(" + r + ")";
 			}
 			break;
